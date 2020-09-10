@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/cinimablck"
     tools:context=".MainActivity">
 
     <TextView
@@ -20,14 +21,17 @@
         android:layout_width="255dp"
         android:layout_height="245dp"
         android:id="@+id/ivMg"
-        android:src="@drawable/inova"
-        android:scaleType="centerCrop"/>
+        android:src="@drawable/cini1"
+        android:scaleType="fitCenter"/>
 
     <EditText
         android:id="@+id/etmsg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter the movie name" />
+        android:hint="Enter the movie name"
+        android:textColorHint="@color/colorPrimary"
+        />
+
 
     <Button
         android:layout_width="match_parent"
@@ -36,4 +40,11 @@
         android:background="@color/colorAccent"
         android:textColor="#E23F"
         android:text="Ok"/>
+
+    <ImageView
+        android:id="@+id/ivMg"
+        android:layout_width="255dp"
+        android:layout_height="281dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cim" />
 </LinearLayout>
